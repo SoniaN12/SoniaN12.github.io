@@ -1,0 +1,105 @@
+%% ANT LABS Technical Documentation		
+%% Software Manual and Technical Document Template	
+%% 									
+%% This provides an example of a software manual created in Overleaf.
+
+\documentclass{ol-softwaremanual}
+%---- Required Packages and Functions ----
+
+\usepackage{graphicx}  % For including images
+\usepackage{fancyhdr}  % For custom headers and footers
+\usepackage{microtype} % For typographical enhancements
+\usepackage{minted}    % For code listings
+\usepackage{amsmath}   % For equations and mathematics
+\usepackage{hyperref}  % For hyperlinks
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}  % For including images
+\usepackage{fancyhdr}  % For custom headers and footers
+\usepackage{microtype} % For typographical enhancements
+\usepackage{minted}    % For code listings
+\usepackage{amsmath}   % For equations and mathematics
+\usepackage{hyperref}  % For hyperlinks
+\usepackage{array}           % For table customization
+\usepackage{booktabs}        % For better table lines
+
+% Set page size and margins
+\usepackage[a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm,headheight=50pt,headsep=20pt]{geometry}
+
+% Custom header
+\pagestyle{fancy}
+\fancyhf{}  % Clear all header and footer fields
+\fancyhead[L]{%
+  \raisebox{-\height}{\includegraphics[width=1.6cm]{image1.jpg}}%
+   
+}
+
+% Custom footer
+\fancyfoot[L]{%
+  \parbox{15cm}{%
+    \centering \thepage\\
+    \scriptsize
+    
+  }
+}
+
+% Custom macros used in this example document
+\newcommand{\doclink}[2]{\href{#1}{#2}\footnote{\url{#1}}}
+\newcommand{\cs}[1]{\texttt{\textbackslash #1}}
+
+
+% Frontmatter data; appears on title page
+
+\author{Mutavu Sonia Nyagatare}
+% Define a page style with logo
+\softwarelogo{\includegraphics[width=18cm]{Image3.jpg}}
+
+\begin{document}
+
+\maketitle
+{\centering  
+
+    {\huge \bfseries Computer Science Lab Report \par}
+    \vspace{2cm}
+    
+    \begin{tabular}{>{\bfseries}l l}
+    Author Name & Mutavu Sonia Nyagatare \\
+    Project Name / Engagement ID & Computer Science lab final report B201 \\
+    \end{tabular}
+}  
+ 
+\newpage
+
+\tableofcontents
+
+
+\newpage
+
+\section{Introduction}
+This report is about the different tools both editing and creating tools that we have used during our course this semester like the use of overleaf tools like latex ,Web creating and designing using Html and CSS designs AS well as different Git and Github tool commands that we have learnt to use through the linux shell terminal and as practise of all these tools we have used them to creat different documents like portifolios and Circulum vitaes (cv) .
+
+
+\section{Body}
+\subsection{Latex tool}
+is a tool for typesetting professional-looking documents. However, LaTeX’s mode of operation is quite different to many other document-production applications you may have used, such as Microsoft Word or LibreOffice Writer, those “WYSIWYG” tools provide users with an interactive page into which they type and edit their text and apply various forms of styling. LaTeX works very differently instead, your document is a plain text file interspersed with LaTeX commands used to express the desired (typeset) results(overleaf,2024).And with the help of overleaf latex you can access different documents templates of different documents ,where i have created my own personal Cv with the help of the DESIGN YOUR CV template in latex it has a structure where the sections in my cv are dispalyed on both the left and right side of the document  and with the help of the (begin(minipage)left or right section)my page is divided into half showing the sections on both sides of the page. With the rest of the detailed information about the sections arranged with the help of the (item) command.My latex cv can be viewed via the link.\href{https://www.overleaf.com/read/ynzgbgxvqhyw#7453f7}{Cv latex}
+\subsection{HTML and CSS tools}
+HTML is the standard markup language for creating Web pages.The <!DOCTYPE html> declaration defines that this document is an HTML5 document the <html> element is the root element of an HTML page,the <head> element contains meta information about the HTML page,the <title> element specifies a title for the HTML page Which is shown in the browser's title bar or in the page's tab.The <br> element defines the document's body it is a container for all the visible contents Such as headings, paragraphs, images, hyperlinks, tables, lists, etc.The <h1> element defines a large heading The <p> element defines a paragraph(W3Schools,2024).So with my own created html portifolio i implemented all these commands where i used <h1> element to write my heading ,And the title for each section i used the <h3> element and within the body i used the<b>element to make some of the important sub headings bold.I also styled my html webpage with different colors with the help of Css colors and by using the <style> element i did the <h3,h1 style> command i was able to make both my background,titles all into different colors to make it more representable. \\
+ I was also able to insert my passport picture with the help of the <img> element.So with the help of these tools i was able to design a web page of my own personal cv and style it as i wanted to.The link to by webpage.
+\href{https://sonian12.github.io/}{Html Webpage}
+
+\subsection{Git and Github tools}
+Git is a version of a control system which, it helps track code changes,who made the changes and also is used in Code collaboration.And with the help of the linux shell terminal you are able to make commands like adding files to your Github repositories ,changing file names and with the git commit command it updates all changes that have been made in your file to your repository file(W3Schools,2024).During the course i have created a github account and made a repository where i have posted my html created webpage my latex Cv both codes and Pdf version and also my latex created final report .The link to my github repository. \href{https://github.com/SoniaN12/SoniaN12.github.io.git}{SoniaN12.github.io}
+\section{Conclusion}
+To sum up the tools that have been mentioned above have been all put into use and practise by myself where i was able to create my own portifolio webpage,my well structured latex cv and create a github repository where i can share and post all my work for anyone with my github repository link to view,and i can say i have found them very useful and will continue to implement them in my continous future and though i have some areas of improvement like with git commands i shall continue to work to educate myself and improve them.
+
+\section{Bibliography}
+
+Learn LaTeX in 30 minutes (no date). Available at: https://www.overleaf.com/learn/latex/Learn LaTeX in 30minutes (Accessed: 29 June 2024).\\
+\\
+Introduction to HTML (no date). Available at: https://www.w3schools.com/html/html intro.asp (Accessed: 29 June 2024).\\
+\\
+Introduction to Git and GitHub (no date). Available at: https://www.w3schools.com/git/gitintro.asp?remote=github (Accessed: 29 June 2024).\\
+
+
+
+
+\end{document}
